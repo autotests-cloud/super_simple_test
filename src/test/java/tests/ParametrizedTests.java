@@ -15,7 +15,7 @@ public class ParametrizedTests {
     @Test
     @Tag("apple_tag")
     void paramitrizedStringTest() {
-        String b = System.getProperty("bbb"); // from terminal, gradle apple_tests -Dbbb=apple
+        String b = System.getProperty("bbb", "orange"); // from terminal, gradle apple_tests -Dbbb=apple
 
         logger.info("\nb = " + b);
         assertEquals("apple", b, "b = " + b);
