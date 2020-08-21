@@ -1,0 +1,1 @@
+gradle apple_tests -Ditem=apple
